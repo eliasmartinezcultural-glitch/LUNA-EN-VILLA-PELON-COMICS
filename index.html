@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#1f211c">
+  <meta name="theme-color" content="#171814">
+  <meta name="description" content="Luna en Villa Pelón — El secreto del viento. Cómic digital territorial.">
   <title>Luna en Villa Pelón — El secreto del viento</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -14,23 +15,37 @@
         <span class="eyebrow">LUNA EN VILLA PELÓN</span>
         <h1>El secreto del viento</h1>
       </div>
-      <div class="progress" id="progress">1 / 20</div>
+      <div class="progress" id="progress">Portada</div>
     </header>
 
-    <section class="reader">
+    <section class="reader" id="reader" aria-label="Lector del cómic">
       <button class="nav prev" id="prev" aria-label="Página anterior">‹</button>
-      <article class="page">
-        <div class="art" id="art" role="img" aria-label="Ilustración de la página"></div>
-        <div class="caption">
-          <span class="page-number" id="pageNumber">01</span>
-          <p id="text">Villa Pelón despertaba despacio. Luna miró el cielo y notó que el viento estaba haciendo algo extraño.</p>
+      <article class="page" id="page">
+        <div class="cover" id="cover">
+          <div class="cover-sky"></div>
+          <div class="cover-barda"></div>
+          <div class="cover-wind" aria-hidden="true">≈</div>
+          <div class="cover-copy">
+            <span class="cover-kicker">UNA HISTORIA DE TERRITORIO Y MEMORIA</span>
+            <strong>LUNA</strong>
+            <span>EN VILLA PELÓN</span>
+            <em>El secreto del viento</em>
+            <button id="start" class="primary">Comenzar historia</button>
+          </div>
+        </div>
+        <div class="story-page" id="storyPage" hidden>
+          <div class="art" id="art" role="img" aria-label="Ilustración de la página"></div>
+          <div class="caption">
+            <span class="page-number" id="pageNumber">01</span>
+            <p id="text"></p>
+          </div>
         </div>
       </article>
       <button class="nav next" id="next" aria-label="Página siguiente">›</button>
     </section>
 
     <nav class="controls" aria-label="Controles del cómic">
-      <button id="first">Inicio</button>
+      <button id="first">Portada</button>
       <button id="last">Final</button>
     </nav>
 
